@@ -1,14 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Harrison Madu – Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Madu – Growth & Analytics Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a2e;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 8px 20px;
+            border-radius: 25px;
+            margin: 5px;
+            font-size: 0.9rem;
+        }
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #16213e;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #e94560;
+        }
+        .project-card h3 {
+            color: #16213e;
+            margin-bottom: 8px;
+        }
+        .project-card .tech {
+            color: #e94560;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .btn {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #c73652;
+        }
+        .btn-github {
+            background: #333;
+        }
+        .btn-github:hover {
+            background: #555;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #e9ecef;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+        }
+        footer a {
+            color: #e94560;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            header { padding: 40px 20px; }
+        }
+    </style>
 </head>
 <body>
-    <h1>👋 Harrison Madu</h1>
-    <p>Growth & Analytics | UX/UI | Digital Marketing</p>
-    <p>
-        <a href="https://github.com/HarrisonMadu/data-portfolio">GitHub</a> |
-        <a href="https://harrison-data-portfolio.streamlit.app/">Live Dashboard</a>
-    </p>
+    <div class="container">
+
+        <header>
+            <h1>👋 Harrison Madu</h1>
+            <p>Growth & Analytics • UX/UI Design • Digital Marketing • Project Management</p>
+            <div>
+                <span class="badge">📊 Data Analytics</span>
+                <span class="badge">🎨 UX/UI Design</span>
+                <span class="badge">📈 Digital Marketing</span>
+                <span class="badge">🚀 Growth Management</span>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>📊 Featured Projects</h2>
+            <div class="projects">
+
+                <div class="project-card">
+                    <h3>📈 Ad Campaign Dashboard</h3>
+                    <p>Real-time dashboard tracking ROAS, CTR, and CPA across multiple ad platforms.</p>
+                    <p class="tech">Python • Streamlit • Plotly</p>
+                    <a href="https://harrison-data-portfolio.streamlit.app/" class="btn" target="_blank">🚀 Live Demo</a>
+                    <a href="https://github.com/HarrisonMadu/data-portfolio/tree/main/projects/ad-dashboard" style="display:block;margin-top:8px;">📂 View Code →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>🏠 Buy&Use – UX Case Study</h3>
+                    <p>Redesigned product pages for a household appliance retailer, increasing conversion by <strong>41%</strong>.</p>
+                    <p class="tech">Figma • Google Optimize • A/B Testing</p>
+                    <a href="https://github.com/HarrisonMadu/data-portfolio/tree/main/projects/landing-page-ab-test-buyuse" class="btn btn-github">📂 Read Case Study →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>🌿 SupremeLife – UX Case Study</h3>
+                    <p>Leveraged brand storytelling to increase conversion by <strong>52%</strong> for a natural herbal products brand.</p>
+                    <p class="tech">Figma • Google Optimize • A/B Testing</p>
+                    <a href="https://github.com/HarrisonMadu/data-portfolio/tree/main/projects/landing-page-ab-test-supremelife" class="btn btn-github">📂 Read Case Study →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>💰 Marketing Spend Optimization</h3>
+                    <p>Analyzed 6 months of ad data to identify high-ROI channels and recommend budget reallocation.</p>
+                    <p class="tech">Python • Pandas • Scikit-learn</p>
+                    <a href="https://github.com/HarrisonMadu/data-portfolio/tree/main/projects/marketing-spend-optimization" class="btn btn-github">📂 View Notebook →</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛠️ My Toolkit</h2>
+            <div class="skills">
+                <span class="skill-tag">📊 Power BI</span>
+                <span class="skill-tag">🐍 Python</span>
+                <span class="skill-tag">🛢️ SQL</span>
+                <span class="skill-tag">🎨 Figma</span>
+                <span class="skill-tag">📈 Google Analytics</span>
+                <span class="skill-tag">📱 Meta Ads</span>
+                <span class="skill-tag">📊 Tableau</span>
+                <span class="skill-tag">📋 Jira</span>
+                <span class="skill-tag">🐙 Git</span>
+                <span class="skill-tag">📊 Excel</span>
+                <span class="skill-tag">🚀 Streamlit</span>
+                <span class="skill-tag">🧠 Scikit-learn</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📫 Let's Connect</h2>
+            <p style="margin-bottom:15px;">I'm always open to collaborating on growth projects, analytics challenges, or new opportunities.</p>
+            <a href="https://linkedin.com/in/harrisonmadu" class="btn" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/HarrisonMadu" class="btn btn-github" target="_blank">🐙 GitHub</a>
+            <a href="mailto:harrison@email.com" class="btn" style="background:#28a745;" target="_blank">📧 Email</a>
+        </div>
+
+        <footer>
+            <p>© 2026 Harrison Madu • Built with ❤️ on GitHub Pages</p>
+            <p style="margin-top:5px;font-size:0.85rem;opacity:0.7;">
+                <a href="https://github.com/HarrisonMadu/data-portfolio">View Source on GitHub</a>
+            </p>
+        </footer>
+
+    </div>
 </body>
 </html>
